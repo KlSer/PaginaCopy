@@ -1,0 +1,103 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #000000;
+        --body-color: #FFFFFF;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--body-bg);
+    color: var(--body-color);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100%; 
+    padding-left: 40%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: #fa5f1a;
+    text-decoration:none;
+}
+
+.Presentation{
+    background-image: url("recursoos/D2.jpg");
+    background-size: cover;
+    height: 860px;
+}
+
+h1{
+    position: relative;
+    top: 400px;
+    color: #ffffff;
+    animation: mover 2s linear infinite;
+    font-size: 100px;
+    text-align: center;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.conteiner .subtext{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 30px;
+    color: #fa5f1a;
+}
+
+.conteiner p{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: beige;
+}
+
+footer ol li{
+    align-items: baseline;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+
